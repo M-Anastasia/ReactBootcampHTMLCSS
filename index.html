@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mercury Test Assignment</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <main class="container">
+      <img class="logo" src="./logo.svg" />
+      <div class="login-form">
+        <div class="title">Log In</div>
+        <input
+          class="text-input text-input-email"
+          name="email"
+          placeholder="E-Mail"
+          autofocus
+        />
+        <input
+          class="text-input text-input-password"
+          name="password"
+          type="password"
+          placeholder="Password"
+        />
+        <div class="login-form__error error" hidden></div>
+        <div class="login-form__submit button">Login</div>
+      </div>
+
+      <div class="user-profile" hidden>
+        <img class="user-profile__avatar" />
+        <strong class="user-profile__name"></strong>
+        <div class="user-profile__logout button">Logout</div>
+      </div>
+    </main>
+  </body>
+</html>
