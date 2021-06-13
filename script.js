@@ -1,8 +1,8 @@
 const loginForm = document.querySelector(".login-form");
-const loginFormEmail = document.querySelector(".text-input-email");
-const loginFormPassword = document.querySelector(".text-input-password");
+const loginFormEmail = document.querySelector(".login-form__text-input_email");
+const loginFormPassword = document.querySelector(".login-form__text-input_password");
 const loginFormError = document.querySelector(".login-form__error");
-const loginFormSubmitButton = document.querySelector(".login-form__submit");
+const loginFormSubmitButton = document.querySelector(".button__submit");
 
 async function login({ email, password }) {
   return new Promise((resolve, reject) => {
@@ -35,13 +35,13 @@ async function tryLogin() {
 }
 
 function showLoginValidationError() {
-  loginFormEmail.classList.add("text-input--invalid");
-  loginFormPassword.classList.add("text-input--invalid");
+  loginFormEmail.classList.add("login-form__text-input_invalid");
+  loginFormPassword.classList.add("login-form__text-input_invalid");
 }
 
 function hideLoginValidationError() {
-  loginFormEmail.classList.remove("text-input--invalid");
-  loginFormPassword.classList.remove("text-input--invalid");
+  loginFormEmail.classList.remove("login-form__text-input_invalid");
+  loginFormPassword.classList.remove("login-form__text-input_invalid");
 }
 
 function showLoginError(message) {
@@ -74,7 +74,7 @@ loginFormPassword.addEventListener("input", hideLoginValidationError);
 const userProfile = document.querySelector(".user-profile");
 const userProfileName = document.querySelector(".user-profile__name");
 const userProfileAvatar = document.querySelector(".user-profile__avatar");
-const userProfileLogoutButton = document.querySelector(".user-profile__logout");
+const userProfileLogoutButton = document.querySelector(".button__logout");
 
 function showUserProfile(user) {
   loginForm.setAttribute("hidden", "true");

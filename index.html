@@ -12,27 +12,27 @@
     <main class="container">
       <img class="logo" src="./logo.svg" />
       <div class="login-form">
-        <div class="title">Log In</div>
+        <div class="login-form__title">Log In</div>
         <input
-          class="text-input text-input-email"
+          class="login-form__text-input login-form__text-input_email"
           name="email"
           placeholder="E-Mail"
           autofocus
         />
         <input
-          class="text-input text-input-password"
+          class="login-form__text-input login-form__text-input_password"
           name="password"
           type="password"
           placeholder="Password"
         />
-        <div class="login-form__error error" hidden></div>
-        <div class="login-form__submit button">Login</div>
+        <div class="login-form__error" hidden></div>
+        <div class="button button__submit">Login</div>
       </div>
 
       <div class="user-profile" hidden>
         <img class="user-profile__avatar" />
         <strong class="user-profile__name"></strong>
-        <div class="user-profile__logout button">Logout</div>
+        <div class="button button__logout">Logout</div>
       </div>
     </main>
   </body>
